@@ -97,9 +97,9 @@ If you are using Git:
 2. Navigate to the folder where you want to put the project.
 3. Run:
    ```
-   git clone <repository-url>
+   git clone <https://github.com/jstnnz/EstiMate-Console.git>
    ```
-   Replace `<repository-url>` with the actual link to this project.
+   Replace `<https://github.com/jstnnz/EstiMate-Console.git>` with the actual link to this project.
 
 If you have a ZIP file:
 1. Download and extract the ZIP file to a folder (e.g., `C:\Users\YourName\Downloads\your_directory`).
@@ -153,81 +153,6 @@ If you want to do it manually:
 - If you see compilation errors, check that you are in the correct folder and all `.java` files are present in `src/`.
 - If you need help, ask your instructor or search for "How to install Java JDK on Windows".
 
-## Example Session
-```
-==============================
- ARCHITECTURE ESTIMATOR TOOL 
-==============================
-Menu:
-1. Create new estimate
-2. Add item (Material/Labor)
-3. View summary
-4. Save estimate to markdown
-5. Exit
-Select option: 1
-New estimate created.
-
-Menu:
-1. Create new estimate
-2. Add item (Material/Labor)
-3. View summary
-4. Save estimate to markdown
-5. Exit
-Select option: 2
-Add Item:
-1. Material
-2. Labor
-Select item type: 1
-Material name: Concrete
-Quantity: 100
-Unit cost: 5.5
-Material added.
-
-Menu:
-1. Create new estimate
-2. Add item (Material/Labor)
-3. View summary
-4. Save estimate to markdown
-5. Exit
-Select option: 2
-Add Item:
-1. Material
-2. Labor
-Select item type: 2
-Labor name: Mason
-Hours: 40
-Hourly rate: 20
-Labor added.
-
-Menu:
-1. Create new estimate
-2. Add item (Material/Labor)
-3. View summary
-4. Save estimate to markdown
-5. Exit
-Select option: 3
-
-Estimate Summary:
--------------------------------------------------------------
-Item            | Qty/Hrs  | Rate/Cost |      Total
--------------------------------------------------------------
-Concrete        |   100.00 |      5.50 |    550.00
-Mason           |    40.00 |     20.00 |    800.00
--------------------------------------------------------------
-TOTAL                               |   1350.00
--------------------------------------------------------------
-
-Menu:
-1. Create new estimate
-2. Add item (Material/Labor)
-3. View summary
-4. Save estimate to markdown
-5. Exit
-Select option: 4
-Saving estimate.....
-Estimate saved to estimate_output.md
-```
-
 ## OOP Principles Used
 - **Encapsulation:** Private fields, getters/setters with validation in all item classes.
 - **Inheritance:** `Material` and `Labor` extend `ProjectItem`.
@@ -239,3 +164,4 @@ Estimate saved to estimate_output.md
 - Arrays are used for item management as required.
 - Console output is formatted for clarity and aesthetics.
 - See source code comments for further details.
+

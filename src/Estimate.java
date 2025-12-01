@@ -1,9 +1,6 @@
 package src;
 
-/**
- * Manages a list of ProjectItem objects for an estimate.
- * Demonstrates polymorphism and array management.
- */
+
 public class Estimate {
     private ProjectItem[] items;
     private int itemCount;
@@ -14,13 +11,9 @@ public class Estimate {
         itemCount = 0;
     }
 
-    /**
-     * Add a ProjectItem to the estimate.
-     * Resizes array if needed.
-     */
+
     public void addItem(ProjectItem item) {
         if (itemCount == items.length) {
-            // Resize array
             ProjectItem[] newItems = new ProjectItem[items.length * 2];
             for (int i = 0; i < items.length; i++) {
                 newItems[i] = items[i];
@@ -30,9 +23,7 @@ public class Estimate {
         items[itemCount++] = item;
     }
 
-    /**
-     * Get all items in the estimate.
-     */
+
     public ProjectItem[] getItems() {
         ProjectItem[] result = new ProjectItem[itemCount];
         for (int i = 0; i < itemCount; i++) {
@@ -41,9 +32,7 @@ public class Estimate {
         return result;
     }
 
-    /**
-     * Get total cost of all items.
-     */
+
     public double getTotalCost() {
         double total = 0;
         for (int i = 0; i < itemCount; i++) {
@@ -52,9 +41,7 @@ public class Estimate {
         return total;
     }
 
-    /**
-     * Get a summary of all items.
-     */
+
     public String getSummary() {
         StringBuilder sb = new StringBuilder();
         sb.append("-------------------------------------------------------------\n");
@@ -69,3 +56,4 @@ public class Estimate {
         return sb.toString();
     }
 }
+

@@ -2,9 +2,7 @@ package src;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- * Main application class for the Architecture Estimator.
- */
+
 public class EstimatorApp {
     private static Estimate estimate = new Estimate();
 
@@ -118,3 +116,4 @@ public class EstimatorApp {
         }
     }
 }
+

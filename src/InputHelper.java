@@ -1,15 +1,11 @@
 package src;
 import java.util.Scanner;
 
-/**
- * Helper class for robust input validation and re-prompting.
- */
+
 public class InputHelper {
     private static Scanner scanner = new Scanner(System.in);
 
-    /**
-     * Prompt for a non-empty string.
-     */
+
     public static String promptString(String prompt) {
         while (true) {
             System.out.print(prompt);
@@ -21,9 +17,7 @@ public class InputHelper {
         }
     }
 
-    /**
-     * Prompt for a positive double value.
-     */
+
     public static double promptPositiveDouble(String prompt) {
         while (true) {
             System.out.print(prompt);
@@ -39,9 +33,7 @@ public class InputHelper {
         }
     }
 
-    /**
-     * Prompt for a menu option (integer in range).
-     */
+
     public static int promptMenuOption(String prompt, int min, int max) {
         while (true) {
             System.out.print(prompt);
@@ -57,3 +49,4 @@ public class InputHelper {
         }
     }
 }
+
